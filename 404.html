@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<!--Tämä koodi on liitetty serverin 404-virhetiedostoon. Tämän tiedoston siirtämine FTP:lle ei ole tarpeen.-->
+
+<html lang="fi">
+
+	<head>
+		<link type="text/css" rel="stylesheet" href="normalize.css" />
+		<link type="text/css" rel="stylesheet" href="style.css" />
+        
+        <!--Language Annotation - tämän pitäisi ohjata englantia puhuvat suoraan englanninkieliseen indexiin
+            ja suomalaiset suomalaiselle-->
+		<link rel="alternate" hreflang="en-fi" href="http://www.datariihi.fi/index_en.html/" />
+        <link rel="alternate" hreflang="fi-fi" href="http://www.datariihi.fi/index.html/" />
+        
+        <title>
+			Datariihi - 404-virhe
+		</title>
+	
+		<meta charset="UTF-8">
+		<meta name="Author" content="Datariihi">
+		
+        <!--Google Analytics-->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-57020770-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+        <!--/Google Analytics-->     	
+        
+	</head>
+
+	<body>
+
+		<div class="container">
+
+			<div class="header">
+
+				<a href="index.html">
+					<img src="images/logo_viivalla.png" alt="Datariihi" />
+				</a>	
+			
+			</div> <!--header-->
+
+			<div class="content">
+
+				<div class="content_left">
+
+					<h2>Hmmm, jokin meni pieleen... (virhekoodi 404).</h2>
+                    
+                    <p class="body_text">
+                        Etsimme ja etsimme, mutta hakemaasi sivua eivät löytäneet kissat, koirat eivätkä muutkaan etsintäpartion jäsenet :( <br/>
+                        <br/>    
+                        Jos törmäsit tähän virheeseen seuraamalla sivullamme olevaa linkkiä, olisi oikein mukavaa jos ilmoittaisit
+                        särkyneestä linkistä meille osoitteeseen <a href="mailto:info@datariihi.fi">info@datariihi.fi</a>.<br/>
+                        <br/>
+                        Voit jatkaa sivuston selailua normaalisti ylävalikon kautta tai palata etusivulle <a href="index.html">tästä</a>.<br/>
+                        Liitä viestiisi mielellään mukaan alla olevat tiedot, niin voimme paremmin paikantaa ongelman lähteen.<br/>
+                        <br/>
+                        - Datariihi<br/>
+                        <br/>
+                        Mukaan liitettävät tiedot:
+                        <!--#echo var="HTTP_REFERER" --><br/>
+                        <!--#echo var="REMOTE_ADDR" --><br/>
+                        <!--#echo var="REQUEST_URI" --><br/>
+                        <!--#echo var="HTTP_HOST" --><br/>
+                        <!--#echo var="HTTP_USER_AGENT" --><br/>
+                        <!--#echo var="REDIRECT_STATUS" --><br/>
+                      
+                    </p>
+                    
+                    <h2>Hmmm, something's missing here... (error code 404).</h2>
+                    
+                    <p class="body_text">
+                        We tried to find the page you were looking for, but failed miserably :(<br/>
+                        <br/>    
+                        If you followed a link on our web page and landed on this page, we'd be very happy if you repored the broken link to us at 
+                        <a href="mailto:info@datariihi.fi">info@datariihi.fi</a>. <br/>
+                        Please also attach the error information below into your e-mail, so we can easily pinpoint the source of the problem and eliminate it.<br/>
+                        <br/>
+                        You can continue browsing the site by using the upper navigation or you can return to the front page by clicking <a href="index_en.html">here</a>.<br/>
+                        <br/>
+                        - Datariihi<br/>  
+                        <br/>
+                        Please attach the error information below:
+                        <!--#echo var="HTTP_REFERER" --><br/>
+                        <!--#echo var="REMOTE_ADDR" --><br/>
+                        <!--#echo var="REQUEST_URI" --><br/>
+                        <!--#echo var="HTTP_HOST" --><br/>
+                        <!--#echo var="HTTP_USER_AGENT" --><br/>
+                        <!--#echo var="REDIRECT_STATUS" --><br/>                     
+                    </p>
+
+				</div> <!--content_left-->
+
+				<div class="content_right">
+
+				</div> <!--content_right-->
+
+			</div> <!--content-->
+
+			<div class="footer">
+				<p>
+					&copy; Datariihi <br/>
+					Louhenkatu 18 as. 7 <br/>
+					60120 Seinäjoki <br/>
+					info@datariihi.fi <br/>
+					0505624402 <br/>
+					Y: 2564409-9
+				</p>
+
+			</div> <!--footer-->
+
+		</div> <!--container-->
+
+	</body>
+
+</html>

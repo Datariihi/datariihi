@@ -1,0 +1,339 @@
+*
+{
+	margin: 0px;
+}
+
+h1
+{
+    font-family: Calibri, Arial;
+	font-size: 3.0em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    
+     color: #000;
+    
+    /*Varjostus näin toteutettuna simuloi hyvin kirjainten reunustus-efektiä.
+    **Efektille on myös proprietary-ominaisuus ainakin Webkit-pohjaisissa selaimissa,
+    **mutta tämän pitäisi toimia kautta linjan.
+    **Tässä on nyt toki menty vähän kikkailemaan eri väreillä :)*/    
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #ff5a1f,
+        -1px 1px 0 #000,
+        1px 1px 0 #ff5a1f;  
+
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+h2
+{
+	font-size: 1.5em;
+	font-family: Calibri, Arial;
+
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+p
+{
+	font-size: 1.0em;
+	font-family: Calibri, Arial;	
+}
+
+a
+{
+	font-size: 1.0em;
+	font-family: Calibri, Arial;
+	color: #ff5a1f;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+.container
+{
+	width: 900px;
+	height: 900px;
+
+	margin: 0 auto;
+}
+
+.header
+{
+	width: 100%;
+	height: 180px;
+
+	margin-top: 20px;
+
+	padding-bottom: 20px;
+}
+
+/**=========================================================================================
+===================================NAVIGOINTIPALKIN SÄÄDÖT===============================**/
+
+.navbar
+{
+	width: 100%;
+	height: 60px;
+    
+    border-top: 5px solid #000000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	border-bottom: 5px solid #ececec;
+
+}
+
+.navbar ul
+{
+	list-style-type: none;
+
+	margin-top: 10px;
+    margin-bottom: 10px;
+
+	padding: 0px;
+}
+
+.navbar ul li
+{
+	display: inline-block;
+	height: 50px;	
+	
+}
+
+.navbar ul li a
+{
+	font-family: Calibri, Arial;
+	font-size: 2em;
+
+	text-decoration: none;
+}
+.navbar ul li a:link, a:visited
+{
+	color: #ff5a1f;
+
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+.navbar ul li a:hover 
+{
+	color: white;
+	background-color: #ff5a1f;
+}
+
+.navbar ul li a:active
+{
+	color: white;
+
+	background-color: #ff5a1f;
+}
+
+.navbar .lang_switch
+{
+    font-size: 0.7em;
+}
+
+.navbar .social_media_icons
+{
+    margin-left: 40px;
+}
+
+.navbar .social_media_icons_en
+{
+    margin-left: 240px;
+}
+
+/**=================================NAVIN SÄÄDÖT PÄÄTTYY==================================**/
+
+.content
+{
+	width: 100%;
+	height: 1100px;
+
+	border-top: 1px solid white;
+
+	background-color: #ececec;
+}
+
+.content_left
+{
+	float: left;
+
+	width: 700px;
+	height: 100%;
+
+	border-right: 1px solid white;
+}
+
+.body_text
+{
+    font-size: 1.1em;
+	margin-left: 50px;
+	margin-top: 30px;
+	margin-right: 50px;
+}
+
+.about_text
+{
+    font-size: 1.0em;
+	margin-left: 50px;
+	margin-top: 30px;
+	margin-right: 50px;
+}
+
+.dos_and_donts
+{
+    margin-left: 25px;
+}
+
+.dos_and_donts li
+{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.news_area
+{
+	width: 600px;
+	height: 200px;
+
+	margin-left: 50px;
+	margin-top: 25px;
+
+	overflow-y: auto;
+}
+
+.news_area_header
+{
+	margin-left: 50px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	text-decoration: underline;
+}
+
+.news_header
+{
+	margin-bottom: 10px;
+	color: #ff5a1f;
+}
+.news_item
+{
+	padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.content_right
+{
+	float: left;
+
+	width: 199px;
+	height: 100%;
+}
+
+.footer
+{
+	clear: both;
+
+	height: 150px;
+	width: 100%;
+
+	background-color: #ececec;
+
+	margin-top: 0px;
+
+	border-top: 1px solid white;
+}
+
+.footer p
+{
+	float: right;
+
+	font-size: 1.0em;
+
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+/**=========================================================================================
+===================================PALVELUT-SIVUN SÄÄDÖT=================================**/
+
+.about_content
+{
+	width: 100%;
+	height: 800px;
+
+	border-top: 1px solid white;
+
+	background-color: #ececec;
+}
+
+/**=============================PALVELUT-SIVUN SÄÄDÖT PÄÄTTYY==============================**/
+
+/**=========================================================================================
+===================================YHTEYDENOTTO-SIVUN SÄÄDÖT=============================**/
+
+.personal_info
+{
+	width: 600px;
+	height: 200px;
+
+	margin-left: 50px;
+	margin-top: 20px;
+
+	background-color: #ececec;
+}
+
+.personal_left
+{
+	float: left;
+
+	width: 200px;
+	height: 100%;
+
+}
+
+.personal .personal_right p
+{
+	float: left;
+	margin-top: 25px;
+
+	width: 200px;
+	height: 100%;
+}
+/**=========================================================================================
+===================================YHTEYDENOTTO-SIVUN SÄÄDÖT PÄÄTTYY=====================**/
+
+/**=========================================================================================
+======================================BLOGI-SIVUN SÄÄDÖT=================================**/
+.blog_content
+{
+	width: 100%;
+	height: 1500px;
+
+	border-top: 1px solid white;
+
+	background-color: #ececec;
+}
+
+.blog_content .blog_content_left
+{
+	margin-left: 25px;
+	margin-top: 25px;
+	margin-right: 100px;
+}
+
+
+/**=========================================================================================
+=================================BLOGI-SIVUN SÄÄDÖT PÄÄTTYY==============================**/
